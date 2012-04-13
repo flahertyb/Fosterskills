@@ -1,0 +1,14 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^fosterskills\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fosterskills\.org$
+RewriteRule ^home\.html$ "http\:\/\/www\.fosterskills\.org\/" [R=301,L]
+
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+DirectoryIndex home.html contactus.html default.html
+Options -Indexes
+  RewriteCond %{HTTP_HOST} !^www.fosterskills.org$ [NC]
+  RewriteRule ^(.*)$ http://www.fosterskills.org/$1 [L,R=301]
+  

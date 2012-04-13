@@ -1,0 +1,430 @@
+/*** FOSTERSKILLS.ORG STYLESHEET ***/
+/*** By Bart Flaherty ***/
+
+/* dynamically resizing full screen background image */
+/* .bg class used by inline style element, first line in body */
+.bg{
+        min-height: 100%;
+        min-width: 1024px;
+
+        width: 100%;
+        height: auto;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+@media screen and (max-width: 1024px) { 
+        img.bg {
+                left: 50%;
+                margin-left: -512px;
+        }
+}
+.wrapper{
+position:relative;
+left:5px;
+width:830px;
+height:768px;
+min-height:768px;
+margin: 0 auto;
+}
+/* default link style, applies to main-left-text */
+a:link, a:visited {
+text-decoration:none;
+color:rgb(29,39,101); /* blue */
+}
+a:hover, a:active {
+text-decoration:none;
+color:rgb(200,128,54); /* orange */
+}
+
+/****************************** TOP ******************************/
+.top{
+float:left;
+height:127px;
+width:825px;
+}
+.logo{
+float:left;
+margin-top:28px;
+margin-right:5px;
+}
+.quote{
+position:absolute;
+font-family:verdana;
+font-size:11px;
+line-height:13px;
+color:rgb(190,190,190);
+text-align:right;
+left:599px;
+top:27px;
+}
+.source{
+position:absolute;
+font-family:verdana;
+font-size:8px;
+color:rgb(200,128,54);
+text-align:right;
+left:722px;
+top:77px;
+}
+.navbar{ 
+/*	class used by the divs that hold navbar text
+	bg is transparent png*/
+float:left;
+width:84px;
+height:18px;
+margin-top:110px;
+margin-left:8px;
+margin-right:3px;
+background-image:url('http://www.fosterskills.org/images/tab.png');
+background-repeat:no-repeat;
+background-position:center;
+}
+.spacer{ 
+/*	class applied to one div in navbar list - 
+	it keeps the floated nav buttons in position
+	inline styles in each html doc put a 
+	position:absolute; navbar div on top of the 
+	spacer to get a tab that overlaps*/
+float:left;
+width:84px;
+height:18px;
+margin-top:79px;
+margin-left:8px;
+margin-right:3px;
+}
+.divfix{
+float:left;
+}
+.thistab{
+position:absolute;
+width:84px;
+height:18px;
+margin-left:9px;
+margin-top:109px;
+background-image:url('http://www.fosterskills.org/images/tab.png');
+}
+.navbar-text{
+font-family:verdana;
+color:rgb(255,255,255);
+font-size:11px;
+font-variant:small-caps;
+text-align:center;
+font-weight:bold;
+margin-top:1px;
+line-height:13px;
+}
+a.navbar-text:link, a.navbar-text:visited {
+text-decoration:none;
+color:rgb(255,255,255);
+}
+a.navbar-text:hover, a.navbar-text:active {
+text-decoration:none;
+color:rgb(18,25,68);
+}
+
+/*******************************MAIN******************************/
+/* the main content box is the only variable html page to page */
+/* orange border #c87f34 or rgb(200,128,54) and white background */
+
+.main{
+float:left;
+height:416px;
+min-height:416px;
+width:813px;
+background-color:rgb(255,255,255);
+border-style:solid;
+border-width:5px;
+border-color:#c87f34;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:2px;
+-moz-box-shadow:0px 0px 10px #000000;
+-webkit-box-shadow:0px 0px 10px #000000;
+box-shadow:0px 0px 10px #000000;
+}
+
+/****************************HOME PAGE****************************/
+.home-text-div   {
+/* div for mission statement, bg img 
+includes Educate Bond Connect Share text*/
+position:absolute;
+height:180px;
+width:409px;
+margin-top:220px;
+margin-left:380px;
+background-image:url('images/home_text_area.png');
+}
+.home-page-text {
+position:relative;
+top:45px;
+font-family:verdana;
+font-size:11px;
+color:rgb(100,100,100);
+margin-left:15px;
+margin-right:15px;
+margin-top:15px;
+margin-bottom:20px;
+line-height:13px;
+}
+h1.home-page-text{
+font-weight:bold;
+}
+
+/****************************SUBPAGE A****************************/
+p.breadcrumbs{
+float:left;
+font-family:verdana;
+font-size:9px;
+color:white;
+text-transform:uppercase;
+margin-left:10px;
+margin-top:6px;
+margin-bottom:6px;
+line-height:9px;
+}
+.main-left-outer{
+float:left;
+width:260px;
+height:400px;
+}
+.main-left-inner{
+/*	ideally, this floats right and centers vertically
+	vertical centering sucks in CSS though, so
+	for now, inline styles handle this with margins*/
+}
+.main-left-text{
+font-family:verdana;
+font-size:11px;
+font-weight:400;
+text-align:right;
+margin:5px;
+margin-right:15px;
+line-height:13px;
+}
+ h1.main-left-text, h2.main-left-text, h3.main-left-text{
+font-weight:700;
+margin-right:30px;
+margin-bottom:12px;
+color:rgb(200,128,54);
+}
+.main-right{
+float:left;
+width:540px;
+height:392px;
+min-height:392px;
+margin-top:10px;
+margin-left:0px;
+margin-bottom:10px;
+border-width:2px;
+border-color:rgb(18,25,68);
+border-style:solid;
+}
+.breadcrumb-div{
+position:absolute;
+width:540px;
+height:22px;
+opacity:.92;
+background-color:rgb(18,25,68);
+}
+.header-div{
+position:absolute;
+width:540px;
+height:42px;
+margin-top:140px;
+opacity:.87;
+background-color:rgb(18,25,68);
+}
+.main-image{
+}
+/* default link style, applies to main-left-text */
+a.breadcrumbs:link, a.breadcrumbs:visited {
+text-decoration:none;
+color:rgb(255,255,255); /* white */
+}
+a.breadcrumbs:hover, a.breadcrumbs:active {
+text-decoration:none;
+color:rgb(200,128,54); /* orange */
+}
+.main-text{
+font-family:verdana;
+font-size:10px;
+text-align:left;
+font-weight:500;
+margin-left:15px;
+margin-right:12px;
+margin-bottom:10px;
+margin-top:10px;
+color:rgb(29,39,101);
+line-height:12px;
+}
+h1.main-text{
+font-size:20px;
+color:white;
+letter-spacing:1px;
+margin-top:15px;
+}
+h2.main-text{
+font-weight:bold;
+
+}
+a.main-text:link, a.main-text:visited {
+text-decoration:none;
+margin:0px;
+color:rgb(200,128,54);
+font-weight:bold;
+}
+a.main-text:hover, a.main-text:active {
+text-decoration:none;
+margin:0px;
+color:rgb(29,39,101);
+font-weight:bold;
+}
+.layout_a_list {/* 	used ad-hoc */
+font-family:verdana;
+font-size:11px;
+font-weight:bold;
+margin-left:20px;
+color:rgb(29,39,101);
+line-height:13px;
+}
+
+.board-council-list {
+float:left;
+width:240x;
+height:370px;
+margin-top:25px;
+padding-left:10px;
+padding-top:10px;
+}
+
+/****************************SUBPAGE B****************************/
+.main_left_B{
+float:left;
+height:412px;
+width:255px;
+}
+.main_left_B_pic{
+float:left;
+width:255px;
+height:416px;
+}
+.main_right_B{
+float:left;
+height:412px;
+width:555px;
+margin-top:2px;
+}
+.main_link{
+font-family:verdana;
+font-size:11px;
+text-align:center;
+}
+
+/***************************LOWER BOXES***************************/
+.lower-box-1, .lower-box-2, .lower-box-3{
+float:left;
+height:152px;
+width:264px;
+border-style:solid;
+border-width:1px;
+border-color:rgb(215,215,215);
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+border-radius:2px;
+-moz-box-shadow:0px 0px 9px #000000;
+-webkit-box-shadow:0px 0px 9px #000000;
+box-shadow:0px 0px 9px #000000;
+margin-top:11px;
+margin-left:2px;
+margin-right:5px;
+margin-bottom:2px;
+}
+p.outer-text{
+font-family:verdana;
+font-size:12px;
+color:rgb(200,128,54);
+line-height:16px;
+margin-left:15px;
+margin-top:10px;
+margin-right:10px;
+}
+a.outer-text:link, a.outer-text:visited {
+text-decoration:none;
+color:rgb(205,205,205);
+font-weight:bold;
+}
+a.outer-text:hover, a.outer-text:active {
+text-decoration:none;
+color:rgb(255,255,255);
+font-weight:bold;
+}
+p.outer-text-header{
+font-family:verdana;
+font-size:12px;
+color:white;
+line-height:13px;
+text-align:left;
+margin-left:15px;
+margin-top:15px;
+}
+a.outer-text-header:link, a.outer-text-header:visited {
+text-decoration:none;
+color:rgb(255,255,255);
+}
+a.outer-text-header:hover, a.outer-text-header:active {
+text-decoration:none;
+color:rgb(255,255,255);
+}
+.lower-box-1 .outer-image{
+position:absolute;
+margin-left:170px;
+margin-top:15px;
+}
+.lower-box-1 p.outer-text{
+margin-top:17px;
+line-height:17px;
+}
+.lower-box-2 .outer-image{
+position:absolute;
+margin-left:132px;
+margin-top:10px;
+}
+.lower-box-2 p.outer-text{
+margin-top:15px;
+}
+.lower-box-3 .outer-image{
+float:right;
+margin-right:20px;
+}
+.lower-box-3 p.outer-text{
+margin-left:15px;
+margin-right:20px;
+font-size:13px;
+}
+
+/******************************FOOTER*****************************/
+.footer{
+float:left;
+height:15px;
+width:813px;
+border-width:1px;
+margin-left:4px;
+margin-right:4px;
+margin-top:4px;
+}
+.footer-text{
+float:right;
+font-family:verdana;
+font-size:8px;
+margin-left:10px;
+margin-right:10px;
+margin-top:10px;
+color:rgb(180,180,180);
+text-align:right;
+}
+
+.main, .wrapper, .main-right{
+height:auto;
+}

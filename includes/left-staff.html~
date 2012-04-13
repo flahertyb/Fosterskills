@@ -1,0 +1,28 @@
+<div class="main-left-outer"> <!-- LEFT MAIN -->
+
+<div class="main-left-inner" style="margin-top:60px;margin-left:20px;">
+
+<h1 class="main-left-text">FOSTER SKILLS SENIOR STAFF</h1> 
+<!-- change style here according to length of navbar-->
+<p class="main-left-text">
+
+  <a href="http://www.fosterskills.org/about/staff/Marquis_Cabrera.html" class="main-left-text"><strong style="font-weight:bold;">President and Founder</strong><nbsp&><nbsp&><br>Marquis Cabrera</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Nicole_Fichera.html" class="main-left-text"><strong style="font-weight:bold;">SVP, OrgDevelopment</strong><nbsp&><nbsp&><br>Nicole Fichera</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Chris_Padovano.html" class="main-left-text"><strong style="font-weight:bold;">VP, Corporate Relations</strong><nbsp&><nbsp&><br>Chris Padovano</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Bart_Flaherty.html" class="main-left-text"><strong style="font-weight:bold;">VP, Technology</strong><nbsp&><nbsp&><br>Bart Flaherty</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Allyson_Gay.html" class="main-left-text"><strong style="font-weight:bold;">VP, Community Relations</strong><nbsp&><nbsp&><br>Allyson Gay</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/James_Eggers.html" class="main-left-text"><strong style="font-weight:bold;">VP & Chief of Staff</strong><nbsp&><nbsp&><br>James Eggers</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Jennifer_McFarland.html" class="main-left-text"><strong style="font-weight:bold;">Executive Director, ProServe</strong><nbsp&><nbsp&><br>Jennifer McFarland</a><br><br>
+
+  <a href="http://www.fosterskills.org/about/staff/Andre_McLaughlin.html" class="main-left-text"><strong style="font-weight:bold;">Director, Community Partnerships</strong><nbsp&><nbsp&><br>Andre McLaughlin</a><br><br>
+</p>
+  
+  </div>
+</div> <!-- END LEFT MAIN -->
+
